@@ -52,6 +52,7 @@ Khi change 1 file update lại trên git.
 git add tests/login.spec.ts
 git commit -m "feat: update login test steps"
 git push
+git check
 
 
 
