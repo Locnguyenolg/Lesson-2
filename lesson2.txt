@@ -1,0 +1,57 @@
+class Xe {
+    maLuc: number;
+    mauSac: string;
+
+    constructor(maLuc: number, mauSac: string) {
+        this.maLuc = maLuc;
+        this.mauSac = mauSac;
+    }
+}
+const xe1 = new Xe(1000, "Xanh da troi");
+const xe2 = new Xe(2000, "Da Cam");
+
+ssh-keygen -t ed25519 -C "locnguyenolg123@gmail.com"
+---------------------------------------------------
+git init : khởi tạo repo local.
+git remote add origin <SSlink>: liên kết repo vs git .
+git add . : thêm file code 
+git commit -m"feat: Nội dung" : commit code 
+git push : đẩy file lên.
+-------------------------
+Các nội dung committ code:
+feat: thêm tính năng, tcs mới 
+chore:sửa nhỏ lẻ, xóa file không cần dùng đến,
+fix: sửa 1 lỗi text trước đó tối đa 50 kí tự tiếng anh or tiếng việt không dấu. 
+
+
+git status 
+git add <file> , git add . -> tất cả các file đã thay đổi. 
+git commit -m "<text>".
+git checkout -b feature/the_first_feature : tạo nhánh feature 
+git push --set-upstream origin feature/the_first_feature: đẩy file nhánh mới
+git diff --check: kiểm tra sạch conflict chưa. 
+---------------------------------------
+git remote	Liệt kê tên các remote (biệt hiệu) đang kết nối (ví dụ: origin).
+git remote -v	Xem chi tiết tên biệt hiệu + đường dẫn URL tương ứng (cả chiều fetch - tải về và push - đẩy lên).
+git remote add <tên> <URL> -> 	Gắn một đường dẫn URL mới vào một cái tên biệt hiệu (thường đặt tên là origin).
+git remote set-url <tên> <URL>	-> Đổi/Cập nhật đường dẫn URL mới cho biệt hiệu đã có sẵn.
+git remote remove <tên>	-> Xóa bỏ liên kết đến một server từ xa.
+
+vd: 
+git remote add origin https://github.com/Locnguyenolg/Bai2 : liên kết repo mới tạo bằng git..
+git remote set-url origin https://github.com/Locnguyenolg/Bai2 đã có origin muốn đổi url. 
+
+
+------------------ 
+Merge code là gộp vào nhánh chính từ nhánh phụ tách ra mỗi nhánh cho dev làm(để tránh sai sót),sau khi review dev merge lại trên nhánh chính. 
+
+
+git commit -m "feat: add logout and billing basket steps" tests/login.spec.ts
+//
+Khi change 1 file update lại trên git. 
+git add tests/login.spec.ts
+git commit -m "feat: update login test steps"
+git push
+
+
+
