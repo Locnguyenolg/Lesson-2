@@ -1,6 +1,6 @@
 let lop: string = "12";
 let tuoi: number = 18;
-let id:string ="A2"
+
 console.log(`k14 class ${lop}${lop}`);
 console.log("k14 class " + lop + tuoi);
 console.log("k14 class", lop, tuoi);
